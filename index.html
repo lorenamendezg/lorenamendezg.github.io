@@ -1,502 +1,389 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WK6NK69XH7"></script>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lorena Méndez – IA para profesionales de HSE, SST y PRL</title>
+<meta name="description" content="Usa la IA para el trabajo repetitivo de HSE, SST y PRL y conserva tú las decisiones. Guía gratis, curso y consultoría para España, Colombia y Latinoamérica, de Lorena Méndez, ingeniera ambiental y especialista en BI.">
+<meta property="og:title" content="Lorena Méndez – IA para profesionales de HSE, SST y PRL">
+<meta property="og:description" content="Usa la IA para el trabajo repetitivo de HSE, SST y PRL y conserva tú las decisiones. Guía gratis, curso y consultoría para España, Colombia y Latinoamérica, de Lorena Méndez, ingeniera ambiental y especialista en BI.">
+<meta property="og:image" content="https://lorenamendezg.github.io/images/avatar.jpg">
+<meta property="og:locale" content="es_ES">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='3' width='12' height='12' rx='2' fill='%23FDB44B'/%3E%3Crect x='17' y='3' width='12' height='12' rx='2' fill='%23E4513A'/%3E%3Crect x='3' y='17' width='12' height='12' rx='2' fill='%23BFE5CF'/%3E%3Crect x='17' y='17' width='12' height='12' rx='2' fill='%23FFE79A'/%3E%3C/svg%3E">
+<style>
+  @font-face {
+    font-family: "Schibsted Grotesk";
+    src: url("fonts/schibsted-grotesk-latin-wght-normal.woff2") format("woff2-variations");
+    font-weight: 400 900; font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: "Schibsted Grotesk";
+    src: url("fonts/schibsted-grotesk-latin-ext-wght-normal.woff2") format("woff2-variations");
+    font-weight: 400 900; font-display: swap;
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  :root {
+    /* Safety-signage palette (ISO 7010): navy ink, safe-condition green, warning yellow */
+    --paper: #F7F9FB; --paper-2: #EBF0F5; --spruce: #102A43; --spruce-2: #486581;
+    --moss: #127A55; --hivis: #FFC20E; --line: #D3DCE6;
+    --measure: 68ch; --gutter: clamp(16px, 4vw, 48px);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--spruce); font-family: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 1.0625rem; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration-color: var(--moss); text-underline-offset: .2em; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid var(--moss); outline-offset: 3px; border-radius: 2px; }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 var(--gutter); }
+  .skip { position: absolute; left: -999px; }
+  .skip:focus { left: var(--gutter); top: 8px; background: var(--hivis); padding: 8px 12px; z-index: 10; }
+
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 22px; }
+  .brand { font-weight: 700; font-size: 1.05rem; text-decoration: none; letter-spacing: -.01em; white-space: nowrap; }
+  .brand span { font-weight: 400; color: var(--spruce-2); margin-left: 4px; }
+  .nav { display: flex; gap: 24px; align-items: center; }
+  .nav a { text-decoration: none; font-size: .95rem; }
+  .nav a:hover { text-decoration: underline; }
+  .nav .lang { font-weight: 600; text-decoration: underline; text-decoration-color: var(--hivis); text-decoration-thickness: 3px; }
+  @media (max-width: 1020px) { .nav a[href="#work"], .nav a[href="#experience"] { display: none; } }
+  @media (max-width: 760px) { .nav a:not(.btn):not(.lang) { display: none; } .brand span { display: none; } }
+
+  .btn { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font: inherit; font-weight: 600; padding: 12px 20px; border-radius: 999px; border: 1.5px solid var(--spruce); line-height: 1.2; cursor: pointer; background: transparent; color: var(--spruce); }
+  .btn-primary { background: var(--hivis); border-color: var(--hivis); }
+  .btn-primary:hover { background: #F0B400; border-color: #F0B400; }
+  .btn-ghost:hover { background: var(--spruce); color: var(--paper); }
+  .nav .btn { padding: 8px 16px; font-size: .95rem; }
+
+  /* Hero */
+  .hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(24px, 5vw, 72px); align-items: center; padding-block: clamp(40px, 7vw, 88px) clamp(40px, 6vw, 64px); }
+  .hero h1 { font-size: clamp(2.3rem, 5vw, 3.9rem); line-height: 1.03; letter-spacing: -.035em; font-weight: 800; margin: 0 0 24px; max-width: 17ch; text-wrap: balance; }
+  .hero .lede { font-size: clamp(1.08rem, 1.5vw, 1.2rem); color: var(--spruce-2); max-width: 50ch; margin: 0 0 32px; }
+  .hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+  .clients { border-top: 1px solid var(--line); padding-block: 20px 0; margin: 0; color: var(--spruce-2); font-size: .95rem; }
+  .clients strong { color: var(--spruce); font-weight: 600; }
+
+  /* Risk matrix */
+  .matrix { width: 100%; max-width: 460px; height: auto; justify-self: end; }
+  .matrix text { font: 600 13px "Schibsted Grotesk", system-ui, sans-serif; fill: var(--spruce); }
+  .matrix .axis { fill: var(--spruce-2); font-weight: 500; }
+  .matrix .ai { fill: none; stroke: var(--spruce); stroke-width: 2; stroke-dasharray: 4 3; }
+  .matrix .you { fill: var(--spruce); stroke: var(--paper); stroke-width: 3; }
+  .matrix .move { stroke: var(--spruce); stroke-width: 2; }
+  .matrix .tag rect { fill: var(--spruce); }
+  .matrix .tag text { fill: var(--paper); font-size: 13px; }
+  .matrix .tag line { stroke: var(--spruce); stroke-width: 2; }
+  .matrix .legend text { font-weight: 500; fill: var(--spruce-2); }
+  @media (prefers-reduced-motion: no-preference) {
+    .matrix .cell { opacity: 0; transform-box: fill-box; transform-origin: center; transform: scale(.85); animation: pop .45s cubic-bezier(.2,.7,.2,1) forwards; animation-delay: var(--d); }
+    .matrix .marks .ai { opacity: 0; animation: fade .4s .7s forwards; }
+    .matrix .marks .move, .matrix .marks .you, .matrix .marks .tag { opacity: 0; animation: fade .5s 1.25s forwards; }
+    @keyframes pop { to { opacity: 1; transform: none; } }
+    @keyframes fade { to { opacity: 1; } }
+  }
+  @media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; }
+    .matrix { justify-self: start; max-width: 320px; }
+  }
+
+  section { padding-block: clamp(56px, 8vw, 104px); }
+  .tint { background: var(--paper-2); }
+  .sec-head { display: grid; grid-template-columns: 1fr 2fr; gap: 16px 48px; margin-bottom: 40px; align-items: end; }
+  h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); line-height: 1.08; letter-spacing: -.03em; font-weight: 800; margin: 0; text-wrap: balance; }
+  .sec-head p { margin: 0; color: var(--spruce-2); max-width: 54ch; }
+  h3 { font-size: 1.3rem; line-height: 1.2; letter-spacing: -.015em; margin: 0 0 10px; font-weight: 700; }
+  @media (max-width: 760px) { .sec-head { grid-template-columns: 1fr; } }
+
+  /* Principles */
+  .principles { padding-block: clamp(48px, 6vw, 72px); }
+  .principles h2 { margin-bottom: 32px; }
+  .prin { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 48px; }
+  .prin > div { border-top: 2px solid var(--spruce); padding-top: 18px; }
+  .prin h3 { font-size: 1.2rem; }
+  .prin p { margin: 0; color: var(--spruce-2); }
+  @media (max-width: 860px) { .prin { grid-template-columns: 1fr; } }
+
+  /* Guide + form */
+  .guide { background: var(--spruce); color: var(--paper); }
+  .guide-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px 72px; align-items: start; }
+  .guide h2 { max-width: 18ch; margin-bottom: 16px; }
+  .g-sub { color: #BCCCDC; font-size: 1.15rem; margin: 0 0 32px; max-width: 46ch; }
+  .guide h3 { font-size: 1.05rem; color: var(--hivis); }
+  .ticks { list-style: none; margin: 0; padding: 0; }
+  .ticks li { position: relative; padding-left: 30px; margin-bottom: 12px; max-width: 52ch; }
+  .ticks li::before { content: ""; position: absolute; left: 0; top: .35em; width: 14px; height: 8px; border-left: 2.5px solid var(--hivis); border-bottom: 2.5px solid var(--hivis); transform: rotate(-45deg); }
+  .signup { background: var(--paper); color: var(--spruce); border-radius: 16px; padding: clamp(20px, 3vw, 32px); display: grid; gap: 14px; }
+  .signup label { font-weight: 600; }
+  .signup input[type=email] { font: inherit; padding: 12px 14px; border: 1.5px solid var(--spruce-2); border-radius: 8px; background: #fff; color: var(--spruce); width: 100%; }
+  .signup input[type=email]:focus-visible { outline: 3px solid var(--hivis); outline-offset: 1px; }
+  .signup .consent { display: grid; grid-template-columns: auto 1fr; gap: 10px; font-weight: 400; font-size: .92rem; color: var(--spruce-2); align-items: start; }
+  .signup .consent input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--spruce); }
+  .signup .btn { justify-content: center; }
+  .f-note { margin: 0; font-size: .88rem; color: var(--spruce-2); }
+  .f-status { margin: 0; font-weight: 600; }
+  .f-status:empty { display: none; }
+  @media (max-width: 860px) { .guide-grid { grid-template-columns: 1fr; } }
+
+  /* Course */
+  .course { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 72px; align-items: start; }
+  .status { display: inline-block; margin: 0 0 16px; padding: 4px 12px; border-radius: 999px; background: var(--hivis); font-weight: 600; font-size: .9rem; }
+  .course h2 { margin-bottom: 16px; }
+  .c-intro { margin: 0 0 28px; max-width: 52ch; }
+  .c-note { margin: 12px 0 0; color: var(--spruce-2); font-size: .95rem; max-width: 46ch; }
+  .modules { list-style: none; margin: 0; padding: 0; counter-reset: m; border-top: 2px solid var(--spruce); }
+  .modules li { counter-increment: m; display: grid; grid-template-columns: 40px 1fr; gap: 8px; padding-block: 14px; border-bottom: 1px solid var(--line); }
+  .modules li::before { content: counter(m); font-weight: 700; color: var(--moss); font-variant-numeric: tabular-nums; }
+  @media (max-width: 860px) { .course { grid-template-columns: 1fr; } }
+
+  /* Services */
+  .services { border-top: 2px solid var(--spruce); }
+  .svc { display: grid; grid-template-columns: 1fr 1.35fr 1fr; gap: 16px 48px; padding-block: 32px; border-bottom: 1px solid var(--line); }
+  .svc h3 { font-size: 1.4rem; }
+  .svc p { margin: 0 0 12px; max-width: var(--measure); }
+  .svc ul { margin: 0; padding-left: 1.1em; }
+  .svc li { margin-bottom: 6px; }
+  .svc li::marker { color: var(--moss); }
+  .svc .who { color: var(--spruce-2); font-size: .95rem; }
+  .svc .who b { display: block; color: var(--spruce); font-weight: 600; margin-bottom: 4px; }
+  .svc .tools { display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start; align-self: start; margin: 4px 0 0; padding: 0; list-style: none; }
+  .svc .tools li { font-size: .82rem; padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; background: #fff; margin: 0; }
+  @media (max-width: 900px) { .svc { grid-template-columns: 1fr; } }
+
+  /* Steps: a real sequence */
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; counter-reset: s; }
+  .steps li { counter-increment: s; border-top: 2px solid var(--spruce); padding-top: 18px; }
+  .steps li::before { content: counter(s); display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--hivis); font-weight: 700; margin-bottom: 14px; }
+  .steps h3 { font-size: 1.1rem; }
+  .steps p { margin: 0; color: var(--spruce-2); font-size: .98rem; }
+  @media (max-width: 900px) { .steps { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .steps { grid-template-columns: 1fr; } }
+
+  /* Work */
+  .work { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 48px; }
+  .case { padding-block: 28px; border-top: 1px solid var(--line); }
+  .case.lead { grid-column: 1 / -1; display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px 48px; border-top: 2px solid var(--spruce); padding-block: 32px 40px; }
+  .case .ctx { color: var(--moss); font-weight: 600; font-size: .95rem; margin: 0 0 6px; }
+  .case p { margin: 0 0 10px; max-width: var(--measure); }
+  .case .result { font-weight: 600; }
+  .case.lead h3 { font-size: 1.7rem; }
+  .case.lead .facts { margin: 0; list-style: none; border-left: 2px solid var(--moss); padding-left: 20px; }
+  .case.lead .facts li { margin-bottom: 12px; }
+  .case a.more { font-weight: 600; }
+  @media (max-width: 860px) { .work, .case.lead { grid-template-columns: 1fr; } }
+
+  /* Timeline */
+  .timeline { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--spruce); }
+  .timeline li { position: relative; display: grid; grid-template-columns: 170px 1fr; gap: 6px 32px; padding: 0 0 32px 32px; }
+  .timeline li::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--paper); border: 2px solid var(--spruce); }
+  .timeline li.now::before { background: var(--hivis); }
+  .timeline .when { color: var(--spruce-2); font-size: .95rem; font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .timeline h3 { font-size: 1.15rem; margin-bottom: 2px; }
+  .timeline .org { color: var(--spruce-2); margin: 0 0 8px; }
+  .timeline p.desc { margin: 0; max-width: var(--measure); }
+  @media (max-width: 640px) { .timeline li { grid-template-columns: 1fr; } }
+  .creds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 48px; margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line); }
+  .creds h3 { font-size: 1.05rem; }
+  .creds ul { margin: 0; padding: 0; list-style: none; }
+  .creds li { margin-bottom: 10px; font-size: .97rem; }
+  .creds li span { display: block; color: var(--spruce-2); font-size: .9rem; }
+  @media (max-width: 860px) { .creds { grid-template-columns: 1fr; } }
+
+  /* About */
+  .about { display: grid; grid-template-columns: 220px 1fr; gap: 40px; align-items: start; }
+  .about img { width: 220px; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 6px solid var(--paper); background: var(--paper); }
+  .about h2 { margin-bottom: 20px; }
+  .about p { max-width: var(--measure); margin: 0 0 16px; }
+  @media (max-width: 640px) { .about { grid-template-columns: 1fr; } .about img { width: 140px; } }
+
+  /* Contact */
+  .contact { background: var(--spruce); color: var(--paper); }
+  .contact h2 { max-width: 20ch; margin-bottom: 20px; }
+  .contact p { color: #BCCCDC; max-width: 54ch; margin: 0 0 28px; }
+  .contact .mail { display: inline-block; font-size: clamp(1.3rem, 3.4vw, 2.2rem); font-weight: 700; letter-spacing: -.02em; color: var(--paper); text-decoration-color: var(--hivis); text-decoration-thickness: 3px; word-break: break-word; }
+  .contact .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+  .contact .btn-ghost, .guide .btn-ghost { border-color: #627D98; color: var(--paper); }
+  .contact .btn-ghost:hover { background: var(--paper); color: var(--spruce); }
+  .contact :focus-visible, .guide :focus-visible { outline-color: var(--hivis); }
+  footer { background: var(--spruce); color: #9FB3C8; font-size: .9rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-block: 24px; }
+  footer nav { display: flex; gap: 20px; }
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="wrap top">
+  <a class="brand" href="#">Lorena Méndez <span>IA y BI para HSE</span></a>
+  <nav class="nav" aria-label="Principal">
+    <a href="#guide">Guía gratis</a>
+    <a href="#course">Curso</a>
+    <a href="#services">Servicios</a>
+    <a href="#work">Proyectos</a>
+    <a class="btn btn-ghost" href="#contact">Contacto</a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Que la IA se encargue del papeleo de HSE. El criterio sigue siendo tuyo.</h1>
+        <p class="lede">Soy Lorena Méndez, ingeniera ambiental con más de diez años en seguridad, salud y ambiente, y hoy trabajo en inteligencia de negocio. Ayudo a profesionales de HSE, SST y PRL en España, Colombia y Latinoamérica a usar bien la IA: redactar, resumir y reportar más rápido, mientras tú aportas el contexto y tomas las decisiones.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#guide">Recibe la guía gratis</a>
+          <a class="btn btn-ghost" href="#services">Ver servicios</a>
+        </div>
+      </div>
+      <svg class="matrix" viewBox="0 0 400 410" role="img" aria-labelledby="mt">
+  <title id="mt">Matriz de riesgo: la IA propone una valoración para varios peligros y la profesional cambia la valoración de uno de ellos</title>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#102A43"/></marker></defs>
+  <rect class="cell" style="--d:45ms" x="70" y="10" width="60" height="60" rx="5" fill="#FFE79A"/><rect class="cell" style="--d:90ms" x="134" y="10" width="60" height="60" rx="5" fill="#FDB44B"/><rect class="cell" style="--d:135ms" x="198" y="10" width="60" height="60" rx="5" fill="#FDB44B"/><rect class="cell" style="--d:180ms" x="262" y="10" width="60" height="60" rx="5" fill="#E4513A"/><rect class="cell" style="--d:225ms" x="326" y="10" width="60" height="60" rx="5" fill="#E4513A"/><rect class="cell" style="--d:90ms" x="70" y="74" width="60" height="60" rx="5" fill="#BFE5CF"/><rect class="cell" style="--d:135ms" x="134" y="74" width="60" height="60" rx="5" fill="#FFE79A"/><rect class="cell" style="--d:180ms" x="198" y="74" width="60" height="60" rx="5" fill="#FDB44B"/><rect class="cell" style="--d:225ms" x="262" y="74" width="60" height="60" rx="5" fill="#E4513A"/><rect class="cell" style="--d:270ms" x="326" y="74" width="60" height="60" rx="5" fill="#E4513A"/><rect class="cell" style="--d:135ms" x="70" y="138" width="60" height="60" rx="5" fill="#BFE5CF"/><rect class="cell" style="--d:180ms" x="134" y="138" width="60" height="60" rx="5" fill="#FFE79A"/><rect class="cell" style="--d:225ms" x="198" y="138" width="60" height="60" rx="5" fill="#FFE79A"/><rect class="cell" style="--d:270ms" x="262" y="138" width="60" height="60" rx="5" fill="#FDB44B"/><rect class="cell" style="--d:315ms" x="326" y="138" width="60" height="60" rx="5" fill="#FDB44B"/><rect class="cell" style="--d:180ms" x="70" y="202" width="60" height="60" rx="5" fill="#BFE5CF"/><rect class="cell" style="--d:225ms" x="134" y="202" width="60" height="60" rx="5" fill="#BFE5CF"/><rect class="cell" style="--d:270ms" x="198" y="202" width="60" height="60" rx="5" fill="#FFE79A"/><rect class="cell" style="--d:315ms" x="262" y="202" width="60" height="60" rx="5" fill="#FFE79A"/><rect class="cell" style="--d:360ms" x="326" y="202" width="60" height="60" rx="5" fill="#FDB44B"/><rect class="cell" style="--d:225ms" x="70" y="266" width="60" height="60" rx="5" fill="#BFE5CF"/><rect class="cell" style="--d:270ms" x="134" y="266" width="60" height="60" rx="5" fill="#BFE5CF"/><rect class="cell" style="--d:315ms" x="198" y="266" width="60" height="60" rx="5" fill="#BFE5CF"/><rect class="cell" style="--d:360ms" x="262" y="266" width="60" height="60" rx="5" fill="#BFE5CF"/><rect class="cell" style="--d:405ms" x="326" y="266" width="60" height="60" rx="5" fill="#FFE79A"/>
+  <g class="marks"><circle class="ai" cx="100.0" cy="104.0" r="14"/><circle class="ai" cx="164.0" cy="232.0" r="14"/><circle class="ai" cx="292.0" cy="232.0" r="14"/><circle class="ai" cx="292.0" cy="104.0" r="14"/><line class="move" x1="274.0" y1="104.0" x2="246.0" y2="104.0" marker-end="url(#ah)"/><circle class="you" cx="228.0" cy="104.0" r="11"/><g class="tag"><rect x="170.0" y="40.0" width="116" height="30" rx="15"/><text x="228.0" y="60.0" text-anchor="middle">Tu decisión</text><line x1="228.0" y1="70.0" x2="228.0" y2="90.0"/></g></g>
+  <text class="axis" x="40" y="168" transform="rotate(-90 40 168)" text-anchor="middle">Severidad</text>
+  <text class="axis" x="228.0" y="352" text-anchor="middle">Probabilidad</text>
+  <g class="legend"><circle class="ai" cx="84" cy="384" r="9"/><text x="100" y="389">Borrador de la IA</text>
+  <circle class="you" cx="250" cy="384" r="8"/><text x="265" y="389">Tu decisión</text></g>
+</svg>
+    </div>
+    <p class="clients">Experiencia en <strong>Chevron</strong>, <strong>Grupo Carrefour (IMT)</strong>, <strong>AXA Colpatria</strong> y <strong>Mechero Energy</strong>, en energía, comercio para retail, seguros y generación eléctrica.</p>
+  </div>
+
+  <section class="principles" aria-labelledby="ph">
+    <div class="wrap">
+      <h2 id="ph">Cómo uso la IA</h2>
+      <div class="prin">
+        <div><h3>La IA redacta, tú decides</h3><p>La valoración de riesgos, las causas raíz y las acciones correctivas siguen siendo del profesional. La IA prepara la primera versión para que dediques tu tiempo a revisar, no a escribir.</p></div>
+        <div><h3>Tú pones el contexto</h3><p>Tus procedimientos, tus centros de trabajo, tus requisitos legales. Los buenos resultados salen de darle a la IA el contexto correcto, no de respuestas genéricas.</p></div>
+        <div><h3>Los datos confidenciales se quedan fuera</h3><p>Los datos personales y de salud nunca entran en una herramienta de IA pública. Te enseño qué anonimizar, qué dejar fuera y cómo comprobar cada resultado contra su fuente.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide" class="guide">
+    <div class="wrap guide-grid">
+      <div>
+        <h2>10 tareas de HSE que puedes delegar a la IA esta semana</h2>
+        <p class="g-sub">Y las decisiones que debes seguir tomando tú. Una guía corta, práctica y gratis.</p>
+        <h3>Qué incluye</h3>
+        <ul class="ticks"><li>Prompts listos para charlas de seguridad, informes de inspección y reportes de incidentes</li><li>Cómo darle tu contexto a la IA sin compartir datos confidenciales</li><li>Una lista para revisar lo que produce la IA antes de que entre en un informe</li></ul>
+      </div>
+      <form class="signup" id="signup" novalidate>
+        <label for="em">Tu correo</label>
+        <input id="em" name="email" type="email" autocomplete="email" required>
+        <label class="consent"><input type="checkbox" name="consent" required> <span>Quiero recibir la guía gratis y correos ocasionales sobre el curso. Puedo darme de baja cuando quiera. Más información en la <a href="datenschutz.html">política de privacidad</a>.</span></label>
+        <button class="btn btn-primary" type="submit">Envíame la guía</button>
+        <p class="f-note">Un correo con la guía y después solo novedades del curso. Sin spam.</p>
+        <p class="f-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section id="course">
+    <div class="wrap course">
+      <div>
+        <p class="status">En preparación</p>
+        <h2>Curso: IA para la gestión HSE</h2>
+        <p class="c-intro">Un curso práctico, en español, para profesionales que quieren que la IA se encargue del papeleo, no del criterio. Para técnicos de PRL en España, profesionales SST en Colombia, responsables HSE en Latinoamérica y consultores que ya conocen su campo y quieren trabajar más rápido.</p>
+        <a class="btn btn-ghost" href="#guide">Únete a la lista de espera</a>
+        <p class="c-note">Inscríbete para recibir la guía gratis y serás de las primeras personas en saber cuándo abre el curso.</p>
+      </div>
+      <div>
+        <h3>Qué vas a aprender</h3>
+        <ol class="modules"><li>Dónde ayuda la IA en el trabajo de HSE y dónde falla</li><li>Privacidad primero: qué puedes compartir y qué no</li><li>Procedimientos, ATS y evaluaciones de riesgo, y charlas de seguridad</li><li>Incidentes: de las notas de testigos a un informe estructurado, con el análisis en tus manos</li><li>Requisitos legales y auditorías: resúmenes, listas de verificación y brechas frente a tu normativa (por ejemplo, Decreto 1072 y Resolución 0312 en Colombia, Ley 31/1995 en España)</li><li>Reportes: de las hojas de cálculo a tu informe mensual de HSE</li><li>Tu propia biblioteca de prompts y tu rutina semanal</li></ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="tint">
+    <div class="wrap">
+      <div class="sec-head"><h2>Servicios</h2><p>Para equipos que quieren resultados ya. Proyectos con alcance cerrado, en remoto, para empresas de España y Latinoamérica. Los prompts, dashboards, el código y la documentación quedan en tus manos.</p></div>
+      <div class="services"><article class="svc">
+          <div><h3>Flujos de trabajo con IA para equipos HSE</h3><p class="who"><b>Para ti si</b>tu equipo pasa más tiempo escribiendo informes que en campo.</p></div>
+          <div><p>Reviso tus tareas repetitivas de HSE, decidimos juntos cuáles puede redactar la IA y preparo los prompts, plantillas y pasos de revisión. Cada decisión sigue en manos de tu equipo.</p><ul><li>Revisión de tareas: qué delegar a la IA y qué no</li><li>Biblioteca de prompts y plantillas basada en tus procedimientos</li><li>Taller online para tu equipo</li></ul></div>
+          <ul class="tools" aria-label="Herramientas"><li>ChatGPT</li><li>Microsoft Copilot</li><li>Gemini</li><li>Claude</li></ul>
+        </article><article class="svc">
+          <div><h3>Dashboards de HSE y KPI</h3><p class="who"><b>Para ti si</b>tus cifras de seguridad u operaciones viven en cinco hojas de cálculo y reportarlas lleva días.</p></div>
+          <div><p>Conecto las fuentes que ya tienes y construyo un solo dashboard que se actualiza solo, desde incidentes e inspecciones hasta ventas, inventario y KPI de sostenibilidad.</p><ul><li>Definición de KPI con quienes usan los números</li><li>Seguimiento de incidentes, inspecciones y acciones correctivas</li><li>Matrices de requisitos legales (ISO 14001, SG-SST)</li></ul></div>
+          <ul class="tools" aria-label="Herramientas"><li>Power BI</li><li>Looker Studio</li><li>Power Query / DAX</li><li>Excel</li><li>SQL</li></ul>
+        </article><article class="svc">
+          <div><h3>Automatización y calidad de datos</h3><p class="who"><b>Para ti si</b>nadie confía en los datos o el mismo reporte se copia y pega cada semana.</p></div>
+          <div><p>Encuentro dónde fallan los datos, lo corrijo en el origen y automatizo los pasos repetitivos.</p><ul><li>Controles de datos maestros entre el ERP y los sistemas internos</li><li>Reportes automáticos (de Sheets a Docs, Power Query)</li><li>Pequeñas apps internas para formularios y aprobaciones</li></ul></div>
+          <ul class="tools" aria-label="Herramientas"><li>Apps Script</li><li>Power Apps</li><li>SharePoint</li><li>SAP Business ByDesign</li><li>Python</li></ul>
+        </article></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="howTitle">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="howTitle">Cómo funciona un proyecto</h2><p>Iteraciones cortas: ves resultados que funcionan desde las primeras semanas, no al final.</p></div>
+      <ol class="steps"><li><h3>Llamada gratis</h3><p>30 minutos sobre las tareas que quieres quitarte de encima y con qué cuentas hoy.</p></li><li><h3>Propuesta cerrada</h3><p>Alcance, entregables, plazos y precio por escrito antes de empezar.</p></li><li><h3>Construcción y revisión</h3><p>Una primera versión pronto y luego revisiones semanales con quienes la van a usar.</p></li><li><h3>Entrega</h3><p>Documentación y una sesión de formación para que tu equipo pueda usarlo y modificarlo.</p></li></ol>
+    </div>
+  </section>
+
+  <section id="work" class="tint">
+    <div class="wrap">
+      <div class="sec-head"><h2>Proyectos destacados</h2><p>Los datos de clientes y empleadores son confidenciales, así que aquí cuento el problema y el resultado en lugar de mostrar los dashboards.</p></div>
+      <div class="work">
+        <article class="case lead">
+          <div><p class="ctx">Mi propio producto</p><h3>albasst.com, un asistente de IA sobre normativa de SST</h3><p>Responde preguntas sobre la normativa colombiana de seguridad y salud en el trabajo. Lo construí para mostrar lo que la IA puede hacer por los profesionales de HSE cuando se configura con cuidado.</p><p><a class="more" href="https://albasst.com">Visitar albasst.com</a></p></div>
+          <ul class="facts"><li>Cada respuesta cita la norma, el artículo y el enlace</li><li>Avisa cuando una pregunta está fuera de sus fuentes</li><li>Diseñado, construido y gestionado por mí</li></ul>
+        </article>
+        <article class="case"><p class="ctx">Inteligencia de negocio, movilidad sostenible</p><h3>Análisis de desplazamientos para planes de movilidad al trabajo</h3><p>El análisis detrás de los planes de movilidad sostenible de empresas en toda España: desde dónde se desplaza la plantilla, qué transporte e infraestructura ciclista hay cerca de cada centro y el CO₂ de los desplazamientos por zona, con el informe generado automáticamente.</p><p class="result">Solo datos a nivel de código postal y mapas aptos para personas con daltonismo.</p></article><article class="case"><p class="ctx">Comercio para retail, Grupo Carrefour</p><h3>Dashboards de inventario y ventas</h3><p>Convertí las necesidades de los equipos de codificación, finanzas y cadena de suministro en reportes que se actualizan solos, y depuré los datos maestros entre SAP Business ByDesign y los sistemas internos del grupo.</p><p class="result">Hice visibles los artículos de baja rotación para que el equipo pudiera actuar sobre el stock.</p></article><article class="case"><p class="ctx">Terminales de combustible, Chevron</p><h3>Reportes de desempeño y seguridad de terminales</h3><p>Reportes en Power BI para terminales que suministraban 20 millones de galones de combustible al mes, y una app de reporte en Power Apps usada por todos los empleados en Colombia.</p><p class="result">Reduje un 50 % el tiempo de formación de conductores con formación en línea y un nuevo briefing operativo.</p></article><article class="case"><p class="ctx">Generación eléctrica, Mechero Energy</p><h3>Sistema de gestión HSE para una central de 60 MW</h3><p>Diseñé y gestioné el sistema HSE bajo las Normas de Desempeño de la IFC (Banco Mundial) para la central, las subestaciones, el gasoducto y una línea de 115 kV, durante la construcción, la puesta en marcha y el arranque.</p><p class="result">Cero incidentes y cero problemas ambientales en todas las fases.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <img src="images/avatar.jpg" alt="Foto de Lorena Méndez" width="220" height="220" loading="lazy">
+      <div>
+        <h2>Sobre mí</h2>
+        <p>Trabajé más de diez años en seguridad, salud y ambiente: asesorando a empresas cliente, construyendo el sistema HSE de una central eléctrica y coordinando operaciones de terminales de combustible. Al preparar reportes para gerentes y autoridades vi cuánto mejoran las decisiones cuando los datos son claros, y en 2022 me pasé a los datos y la inteligencia de negocio.</p><p>Construir albasst.com me mostró cuánto tiempo puede ahorrar la IA a los profesionales de HSE cuando se usa con cuidado, y cuánto se equivoca cuando no. Eso es lo que enseño hoy.</p><p>Fuera del trabajo viajo, bailo y soy una de las voces de <a href="https://open.spotify.com/show/5GUdJfToEyDSVvpeJNblSj">Lo que callamos los expats</a>, un podcast sobre historias de migración.</p>
+        <p>Proyectos públicos: <a href="https://public.tableau.com/app/profile/lorena.mendez">Tableau Public</a>, <a href="https://github.com/lorenamendezg/projects">GitHub</a>, <a href="https://www.kaggle.com/lorenamendez">Kaggle</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Cuéntame qué parte de tu trabajo te gustaría quitarte de encima.</h2>
+      <p>Describe la tarea, las herramientas que usas y qué información es confidencial. Te respondo con algunas preguntas o una propuesta de horario para una llamada.</p>
+      <a class="mail" href="mailto:lorenamendezg@hotmail.com?subject=Consulta%20de%20proyecto">lorenamendezg@hotmail.com</a>
+      <div class="links">
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/lorena-mendez-g/">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://albasst.com">albasst.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Lorena Méndez</span>
+    <nav aria-label="Legal"><a href="impressum.html">Aviso legal</a><a href="datenschutz.html">Privacidad</a></nav>
+  </div>
+</footer>
+
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WK6NK69XH7');
+  // Free guide sign-up.
+  // TODO: when you choose a newsletter provider (e.g. Brevo or MailerLite, both EU-based),
+  // replace this form with the provider's embed code, or set the form's action to its URL.
+  // Until then, the form opens the visitor's email app with a pre-filled request.
+  (function () {
+    var f = document.getElementById('signup');
+    if (!f) return;
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var em = f.email, ok = f.consent, st = f.querySelector('.f-status');
+      if (!em.checkValidity()) { em.focus(); em.reportValidity(); return; }
+      if (!ok.checked) { ok.focus(); ok.reportValidity(); return; }
+      location.href = 'mailto:lorenamendezg@hotmail.com?subject=' + encodeURIComponent('Guía gratis: IA para HSE') +
+        '&body=' + encodeURIComponent('Por favor, envíame la guía gratis. Mi correo: ' + em.value);
+      st.textContent = 'Se abrió tu programa de correo con la solicitud. Envíala y te llega la guía.';
+    });
+  })();
 </script>
-
-		<title>Lorena Mendez</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		  <link rel="icon" href="./images/loreavatar.jpeg">
-	</head>
-	<body class="is-preload">
-
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>I am Lorena Mendez</strong>, <br/> HSE Engineer | Data Analyst | Business Intelligence | Sustainability | Women In Tech<br />
-				</div>
-			</header>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>About me:<br />
-							</h2>
-						</header>
-						<p>Naturally curious and observant. Thrives on new challenges and never stops seeking out learning opportunities</p>
-						<p>I pivoted to analytics in 2022 after working in HSE management, I´ve passionately expanded my skill set to harness the power of data for informed decision-making. I´ve been working with tools such as Looker, Data Studio, Excel, Power Query, PowerBI, Tableau, Python, SQL,and R. I love the innovation and create new ways of doing things to get better results.</p>
-						<p>Further about my professional career, I love to travel, study and dance. Also with some friends we created a Podcast "Lo que callamos los expats", about the migration stories around the world. I carry with me moments that never would have happened if I had not dared beyond my limits and stepped out of my comfort zone.</p>
-						<ul class="actions">
-									<li><a href="https://www.linkedin.com/in/lorena-mendez-g/" class="button">LinkedIn</a></li>
-								<li><a href="https://open.spotify.com/show/5GUdJfToEyDSVvpeJNblSj" class="button">Podcast</a></li>
-						</ul>
-					</section>
-
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Projects</h2>
-						<div class="row">
-								<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/lorenamendezg/projects/tree/main/AdventureWorks">
-									<img src="images/fulls/07.png" alt="" class="image fit thumb"/></a>
-								<h3>Power BI - Adventure Works Sales Report</h3>
-								<p>I have dedicated myself to continuous skill enhancement through Microsoft's self-paced learning modules, with a specific focus on advancing my proficiency in PowerBI</p>
-								</article>
-
-								<article class="col-6 col-12-xsmall work-item">
-								<a href="https://www.theforage.com/profile/ngmBkZvmcyevrtRDd?ref=ngmBkZvmcyevrtRDd">
-									<img src="images/fulls/06.png" alt="" class="image fit thumb"/></a>
-								<h3>BCG. Climate & Sustainability Virtual Experience Program.</h3>
-								<p>Working with a client to help them reach their Carbon Emissions Reduction targets. </p>
-								</article>
-
-
-								<article class="col-6 col-12-xsmall work-item">
-									<a href="https://datastudio.google.com/s/hufXOhUOnPs">
-										<img src="images/fulls/03.JPG" alt="" class="image fit thumb"/></a>
-									<h3>Google DataStudio & Google Analytics</h3>
-									<p>With information from Data Analytics, I used Google Data Studio to create a good dashboard. Here link to review directly in Google DataStudio</p>
-								</article>
-								<article class="col-6 col-12-xsmall work-item">
-									<a href="https://github.com/lorenamendezg/projects/blob/main/Cyclistic%20Bikes/ReportGit.md">
-										<img src="images/fulls/01.jpg" alt="" class="image fit thumb"/></a>
-									<h3>Cyclistic Bikes: R & RMarkdown</h3>
-									<p>Review the repository in GitHub.</p>
-								</article>
-
-
-								<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/lorenamendezg/projects/blob/main/Cyclistic%20Bikes/User%20performance.pdf">
-									<img src="images/fulls/01.jpg" alt="" class="image fit thumb"/></a>
-								<h3>Cyclistic Bikes: Excel & PowerPoint</h3>
-								<p>User Performance Report</p>
-								</article>
-							
-								<article class="col-6 col-12-xsmall work-item">
-								<a href="https://www.kaggle.com/code/lorenamendez/exercise-bellabeat-in-sql-and-datastudio/notebook">
-									<img src="images/fulls/02.jpg" alt="" class="image fit thumb"/></a>
-								<h3>Bellabeat Project: SQL (BigQuery) & DataStudio</h3>
-								<p>Review notebook in Kaggle.</p>
-								</article>
-
-
-
-
-						</br>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://community.storytellingwithdata.com/members/lorena-mendez/activity/exercises">
-									<img src="images/fulls/03.png" alt="" class="image fit thumb" />
-								</a>
-								<h3>Storytellingwithdata</h3>
-								<p>Challenges and activities.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://public.tableau.com/app/profile/lorena.mendez">
-									<img src="images/fulls/04.png" alt="" class="image fit thumb" /></a>
-								<h3>Tableau</h3>
-								<p>My data visualization projects.</p>
-							</article>
-						</div>
-
-
-</br>
-
-		<h2>My Badges</h2>
-						<li>
-							<a href="https://credly.com/users/aidee-mendez/ " target="_blank">Credly</a><br />
-						</li>
-						<p>Google Data Analytics Professional Certificate, Working in a Digital World: Essential Skills, Professional Skills, Agile, Project Management</p>
-
-					</section>
-
-				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<p></p>
-						<div class="row">
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										Cologne, Germany<br />
-									</li>
-									
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">lorenamendezg@hotmail.com</a>
-									</li>
-
-
-									<li>
-										<h3 class="icon solid fa-spotify"><span class="label">Spotify</span></h3>
-										<a href="https://open.spotify.com/show/5GUdJfToEyDSVvpeJNblSj" ></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
-
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				-->
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="#" class="icon solid fa-spotify"><span class="label">Spotify</span></a></li>
-						
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Data analyst</li><li>Design: Lorena Mendez</li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
