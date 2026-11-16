@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lorena Méndez – IA para profesionales de HSE</title>
-<meta name="description" content="Usa la IA para el trabajo repetitivo de HSE, SST y PRL y conserva tú las decisiones. Guía gratis, curso y consultoría para Colombia, España y Latinoamérica, de Lorena Méndez, ingeniera ambiental y especialista en BI.">
-<meta property="og:title" content="Lorena Méndez – IA para profesionales de HSE">
-<meta property="og:description" content="Usa la IA para el trabajo repetitivo de HSE, SST y PRL y conserva tú las decisiones. Guía gratis, curso y consultoría para Colombia, España y Latinoamérica, de Lorena Méndez, ingeniera ambiental y especialista en BI.">
+<title>Lorena Méndez – IA para profesionales de HSE, SST y PRL</title>
+<meta name="description" content="Usa la IA para el trabajo repetitivo de HSE, SST y PRL y conserva tú las decisiones. Guía gratis, curso y consultoría para España, Colombia y Latinoamérica, de Lorena Méndez, ingeniera ambiental y especialista en BI.">
+<meta property="og:title" content="Lorena Méndez – IA para profesionales de HSE, SST y PRL">
+<meta property="og:description" content="Usa la IA para el trabajo repetitivo de HSE, SST y PRL y conserva tú las decisiones. Guía gratis, curso y consultoría para España, Colombia y Latinoamérica, de Lorena Méndez, ingeniera ambiental y especialista en BI.">
 <meta property="og:image" content="https://lorenamendezg.github.io/images/loreavatar.jpeg">
 <meta property="og:locale" content="es_ES">
 <link rel="icon" href="images/loreavatar.jpeg">
@@ -127,11 +127,15 @@
   @media (max-width: 860px) { .guide-grid { grid-template-columns: 1fr; } }
 
   /* Course */
-  .course { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 72px; align-items: start; }
+  .course { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 72px; align-items: center; }
   .status { display: inline-block; margin: 0 0 16px; padding: 4px 12px; border-radius: 999px; background: var(--hivis); font-weight: 600; font-size: .9rem; }
   .course h2 { margin-bottom: 16px; }
   .c-intro { margin: 0 0 28px; max-width: 52ch; }
   .c-note { margin: 12px 0 0; color: var(--spruce-2); font-size: .95rem; max-width: 46ch; }
+  .c-ask { background: var(--paper-2); border-radius: 16px; padding: clamp(20px, 3vw, 32px); }
+  .c-ask h3 { font-size: 1.3rem; }
+  .c-ask p { margin: 0 0 20px; max-width: 48ch; }
+  .c-ask .c-note { margin: 16px 0 0; }
   .modules { list-style: none; margin: 0; padding: 0; counter-reset: m; border-top: 2px solid var(--spruce); }
   .modules li { counter-increment: m; display: grid; grid-template-columns: 40px 1fr; gap: 8px; padding-block: 14px; border-bottom: 1px solid var(--line); }
   .modules li::before { content: counter(m); font-weight: 700; color: var(--moss); font-variant-numeric: tabular-nums; }
@@ -230,7 +234,7 @@
     <div class="hero">
       <div>
         <h1>Que la IA se encargue del papeleo de HSE. El criterio sigue siendo tuyo.</h1>
-        <p class="lede">Soy Lorena Méndez, ingeniera ambiental con más de diez años de experiencia en seguridad y salud en el trabajo y medio ambiente, y hoy trabajo en inteligencia de negocios. Ayudo a profesionales de HSE en España, Colombia y Latinoamérica a usar bien la IA: redactar, resumir y reportar más rápido, mientras tú aportas el contexto y tomas las decisiones.</p>
+        <p class="lede">Soy Lorena Méndez, ingeniera ambiental con más de diez años en seguridad, salud y ambiente, y hoy trabajo en inteligencia de negocio. Ayudo a profesionales de HSE, SST y PRL en España, Colombia y Latinoamérica a usar bien la IA: redactar, resumir y reportar más rápido, mientras tú aportas el contexto y tomas las decisiones.</p>
         <div class="ctas">
           <a class="btn btn-primary" href="#guide">Recibe la guía gratis</a>
           <a class="btn btn-ghost" href="#services">Ver servicios</a>
@@ -247,7 +251,7 @@
   <circle class="you" cx="250" cy="384" r="8"/><text x="265" y="389">Tu decisión</text></g>
 </svg>
     </div>
-    <p class="clients">Experiencia en <strong>Chevron</strong>, <strong>Grupo Carrefour (IMT)</strong>, <strong>AXA Colpatria</strong> y <strong>Mechero Energy</strong>, en oil & gas, energía, comercio para retail, seguros y generación eléctrica.</p>
+    <p class="clients">Experiencia en <strong>Chevron</strong>, <strong>Grupo Carrefour (IMT)</strong>, <strong>AXA Colpatria</strong> y <strong>Mechero Energy</strong>, en energía, comercio para retail, seguros y generación eléctrica.</p>
   </div>
 
   <section class="principles" aria-labelledby="ph">
@@ -272,7 +276,7 @@
       <form class="signup" id="signup" novalidate>
         <label for="em">Tu correo</label>
         <input id="em" name="email" type="email" autocomplete="email" required>
-        <label class="consent"><input type="checkbox" name="consent" required> <span>Quiero recibir la guía gratis y correos ocasionales sobre el curso. Puedo darme de baja cuando quiera. Más información en la <a href="datenschutz.html">política de privacidad</a>.</span></label>
+        <label class="consent"><input type="checkbox" name="consent" required> <span>Autorizo el tratamiento de mi correo para recibir la guía gratis y correos ocasionales sobre el curso, según la <a href="privacidad.html">política de tratamiento de datos personales</a>. Puedo darme de baja cuando quiera.</span></label>
         <button class="btn btn-primary" type="submit">Envíame la guía</button>
         <p class="f-note">Un correo con la guía y después solo novedades del curso. Sin spam.</p>
         <p class="f-status" role="status" aria-live="polite"></p>
@@ -283,15 +287,15 @@
   <section id="course">
     <div class="wrap course">
       <div>
-        <p class="status">En preparación</p>
+        <p class="status">En construcción</p>
         <h2>Curso: IA para la gestión HSE</h2>
-        <p class="c-intro">Un curso práctico, en español, para profesionales que quieren que la IA se encargue del papeleo, no del criterio. Para técnicos de PRL en España, profesionales SST en Colombia, responsables HSE en Latinoamérica y consultores que ya conocen su campo y quieren trabajar más rápido.</p>
-        <a class="btn btn-ghost" href="#guide">Únete a la lista de espera</a>
-        <p class="c-note">Inscríbete para recibir la guía gratis y serás de las primeras personas en saber cuándo abre el curso.</p>
+        <p class="c-intro">Estoy construyendo un curso práctico, en español, para profesionales de HSE, SST y PRL que quieren usar la IA en su día a día sin perder el criterio.</p>
       </div>
-      <div>
-        <h3>Qué vas a aprender</h3>
-        <ol class="modules"><li>Dónde ayuda la IA en el trabajo de HSE y dónde falla</li><li>Privacidad primero: qué puedes compartir y qué no</li><li>Procedimientos, ATS y evaluaciones de riesgo, y charlas de seguridad</li><li>Incidentes: de las notas de testigos a un informe estructurado, con el análisis en tus manos</li><li>Requisitos legales y auditorías: resúmenes, listas de verificación y brechas frente a tu normativa (por ejemplo, Decreto 1072 y Resolución 0312 en Colombia, Ley 31/1995 en España)</li><li>Reportes: de las hojas de cálculo a tu informe mensual de HSE</li><li>Tu propia biblioteca de prompts y tu rutina semanal</li></ol>
+      <div class="c-ask">
+        <h3>¿Qué te gustaría aprender?</h3>
+        <p>Cuéntame qué tareas te quitan más tiempo o qué te gustaría resolver con IA. Lo que me escribas me ayuda a darle forma al curso.</p>
+        <a class="btn btn-primary" href="mailto:lorenamendezg@hotmail.com?subject=Ideas%20para%20el%20curso%20de%20IA%20para%20HSE">Escríbeme tus ideas</a>
+        <p class="c-note">¿Quieres que te avise cuando abra? <a href="#guide">Inscríbete en la guía gratis.</a></p>
       </div>
     </div>
   </section>
@@ -327,7 +331,7 @@
       <div class="sec-head"><h2>Proyectos destacados</h2><p>Los datos de clientes y empleadores son confidenciales, así que aquí cuento el problema y el resultado en lugar de mostrar los dashboards.</p></div>
       <div class="work">
         <article class="case lead">
-          <div><p class="ctx">Mi propio producto</p><h3>albasst.com, un asistente de IA sobre normativa de SST y auditoría documental</h3><p>Responde preguntas sobre la normativa colombiana de seguridad y salud en el trabajo. Lo construí para mostrar lo que la IA puede hacer por los profesionales de HSE cuando se configura con cuidado.</p><p><a class="more" href="https://albasst.com">Visitar albasst.com</a></p></div>
+          <div><p class="ctx">Mi propio producto</p><h3>albasst.com, un asistente de IA sobre normativa de SST</h3><p>Responde preguntas sobre la normativa colombiana de seguridad y salud en el trabajo. Lo construí para mostrar lo que la IA puede hacer por los profesionales de HSE cuando se configura con cuidado.</p><p><a class="more" href="https://albasst.com">Visitar albasst.com</a></p></div>
           <ul class="facts"><li>Cada respuesta cita la norma, el artículo y el enlace</li><li>Avisa cuando una pregunta está fuera de sus fuentes</li><li>Diseñado, construido y gestionado por mí</li></ul>
         </article>
         <article class="case"><p class="ctx">Inteligencia de negocio, movilidad sostenible</p><h3>Análisis de desplazamientos para planes de movilidad al trabajo</h3><p>El análisis detrás de los planes de movilidad sostenible de empresas en toda España: desde dónde se desplaza la plantilla, qué transporte e infraestructura ciclista hay cerca de cada centro y el CO₂ de los desplazamientos por zona, con el informe generado automáticamente.</p><p class="result">Solo datos a nivel de código postal y mapas aptos para personas con daltonismo.</p></article><article class="case"><p class="ctx">Comercio para retail, Grupo Carrefour</p><h3>Dashboards de inventario y ventas</h3><p>Convertí las necesidades de los equipos de codificación, finanzas y cadena de suministro en reportes que se actualizan solos, y depuré los datos maestros entre SAP Business ByDesign y los sistemas internos del grupo.</p><p class="result">Hice visibles los artículos de baja rotación para que el equipo pudiera actuar sobre el stock.</p></article><article class="case"><p class="ctx">Terminales de combustible, Chevron</p><h3>Reportes de desempeño y seguridad de terminales</h3><p>Reportes en Power BI para terminales que suministraban 20 millones de galones de combustible al mes, y una app de reporte en Power Apps usada por todos los empleados en Colombia.</p><p class="result">Reduje un 50 % el tiempo de formación de conductores con formación en línea y un nuevo briefing operativo.</p></article><article class="case"><p class="ctx">Generación eléctrica, Mechero Energy</p><h3>Sistema de gestión HSE para una central de 60 MW</h3><p>Diseñé y gestioné el sistema HSE bajo las Normas de Desempeño de la IFC (Banco Mundial) para la central, las subestaciones, el gasoducto y una línea de 115 kV, durante la construcción, la puesta en marcha y el arranque.</p><p class="result">Cero incidentes y cero problemas ambientales en todas las fases.</p></article>
@@ -340,7 +344,7 @@
       <img src="images/loreavatar.jpeg" alt="Foto de Lorena Méndez" width="220" height="220" loading="lazy">
       <div>
         <h2>Sobre mí</h2>
-        <p>Trabajé más de diez años en seguridad, salud y ambiente: asesorando a empresas cliente, construyendo el sistema HSE de una central eléctrica y coordinando operaciones de terminales de combustible. Al preparar reportes para gerentes y autoridades vi cuánto mejoran las decisiones cuando los datos son claros, y en 2022 me pasé a los datos y la inteligencia de negocio.</p><p>Construir albasst.com me mostró cuánto tiempo puede ahorrar la IA a los profesionales de HSE cuando se usa con cuidado, y cuánto se equivoca cuando no. Eso es lo que enseño hoy.</p><p>Fuera del trabajo viajo, paso tiempo con mi familia y soy una de las voces de <a href="https://open.spotify.com/show/5GUdJfToEyDSVvpeJNblSj">Lo que callamos los expats</a>, un podcast sobre historias de migración.</p>
+        <p>Trabajé más de diez años en seguridad, salud y ambiente: asesorando a empresas cliente, construyendo el sistema HSE de una central eléctrica y coordinando operaciones de terminales de combustible. Al preparar reportes para gerentes y autoridades vi cuánto mejoran las decisiones cuando los datos son claros, y en 2022 me pasé a los datos y la inteligencia de negocio.</p><p>Construir albasst.com me mostró cuánto tiempo puede ahorrar la IA a los profesionales de HSE cuando se usa con cuidado, y cuánto se equivoca cuando no. Eso es lo que enseño hoy.</p><p>Fuera del trabajo viajo, bailo y soy una de las voces de <a href="https://open.spotify.com/show/5GUdJfToEyDSVvpeJNblSj">Lo que callamos los expats</a>, un podcast sobre historias de migración.</p>
         <p>Proyectos públicos: <a href="https://public.tableau.com/app/profile/lorena.mendez">Tableau Public</a>, <a href="https://github.com/lorenamendezg/projects">GitHub</a>, <a href="https://www.kaggle.com/lorenamendez">Kaggle</a>.</p>
       </div>
     </div>
@@ -362,7 +366,7 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Lorena Méndez</span>
-    <nav aria-label="Legal"><a href="impressum.html">Aviso legal</a><a href="datenschutz.html">Privacidad</a></nav>
+    <nav aria-label="Legal"><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a></nav>
   </div>
 </footer>
 
