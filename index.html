@@ -142,18 +142,14 @@
   @media (max-width: 860px) { .course { grid-template-columns: 1fr; } }
 
   /* Services */
-  .services { border-top: 2px solid var(--spruce); }
-  .svc { display: grid; grid-template-columns: 1fr 1.35fr 1fr; gap: 16px 48px; padding-block: 32px; border-bottom: 1px solid var(--line); }
+  .services { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; border-top: 2px solid var(--spruce); }
+  .svc { padding-block: 28px; }
   .svc h3 { font-size: 1.4rem; }
-  .svc p { margin: 0 0 12px; max-width: var(--measure); }
-  .svc ul { margin: 0; padding-left: 1.1em; }
-  .svc li { margin-bottom: 6px; }
-  .svc li::marker { color: var(--moss); }
-  .svc .who { color: var(--spruce-2); font-size: .95rem; }
-  .svc .who b { display: block; color: var(--spruce); font-weight: 600; margin-bottom: 4px; }
-  .svc .tools { display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start; align-self: start; margin: 4px 0 0; padding: 0; list-style: none; }
-  .svc .tools li { font-size: .82rem; padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; background: #fff; margin: 0; }
-  @media (max-width: 900px) { .svc { grid-template-columns: 1fr; } }
+  .svc p { margin: 0 0 16px; max-width: 46ch; }
+  .svc .tools { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+  .svc .tools li { font-size: .82rem; padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; background: #fff; }
+  .svc-cta { margin: 16px 0 0; }
+  @media (max-width: 760px) { .services { grid-template-columns: 1fr; } .svc + .svc { border-top: 1px solid var(--line); } }
 
   /* Steps: a real sequence */
   .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; counter-reset: s; }
@@ -174,6 +170,10 @@
   .case.lead h3 { font-size: 1.7rem; }
   .case.lead .facts { margin: 0; list-style: none; border-left: 2px solid var(--moss); padding-left: 20px; }
   .case.lead .facts li { margin-bottom: 12px; }
+  .minis { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 40px; }
+  .minis .case h3 { font-size: 1.15rem; }
+  .minis .case .result { font-weight: 400; color: var(--spruce-2); }
+  @media (max-width: 860px) { .minis { grid-template-columns: 1fr; } }
   .case a.more { font-weight: 600; }
   @media (max-width: 860px) { .work, .case.lead { grid-template-columns: 1fr; } }
 
@@ -234,7 +234,7 @@
     <div class="hero">
       <div>
         <h1>Que la IA se encargue del papeleo de HSE. El criterio sigue siendo tuyo.</h1>
-        <p class="lede">Soy Lorena Méndez, ingeniera ambiental con más de diez años en seguridad, salud y ambiente, y hoy trabajo en inteligencia de negocio. Ayudo a profesionales de HSE, SST y PRL en España, Colombia y Latinoamérica a usar bien la IA: redactar, resumir y reportar más rápido, mientras tú aportas el contexto y tomas las decisiones.</p>
+        <p class="lede">Soy Lorena Méndez, ingeniera ambiental y especialista en datos. Te enseño a usar la IA para redactar, resumir y reportar más rápido, mientras tú pones el contexto y decides.</p>
         <div class="ctas">
           <a class="btn btn-primary" href="#guide">Recibe la guía gratis</a>
           <a class="btn btn-ghost" href="#services">Ver servicios</a>
@@ -251,16 +251,16 @@
   <circle class="you" cx="250" cy="384" r="8"/><text x="265" y="389">Tu decisión</text></g>
 </svg>
     </div>
-    <p class="clients">Experiencia en <strong>Chevron</strong>, <strong>Grupo Carrefour (IMT)</strong>, <strong>AXA Colpatria</strong> y <strong>Mechero Energy</strong>, en energía, comercio para retail, seguros y generación eléctrica.</p>
+    <p class="clients">Más de diez años en HSE y datos con <strong>Chevron</strong>, <strong>Grupo Carrefour</strong>, <strong>AXA Colpatria</strong> y <strong>Mechero Energy</strong>.</p>
   </div>
 
   <section class="principles" aria-labelledby="ph">
     <div class="wrap">
       <h2 id="ph">Cómo uso la IA</h2>
       <div class="prin">
-        <div><h3>La IA redacta, tú decides</h3><p>La valoración de riesgos, las causas raíz y las acciones correctivas siguen siendo del profesional. La IA prepara la primera versión para que dediques tu tiempo a revisar, no a escribir.</p></div>
-        <div><h3>Tú pones el contexto</h3><p>Tus procedimientos, tus centros de trabajo, tus requisitos legales. Los buenos resultados salen de darle a la IA el contexto correcto, no de respuestas genéricas.</p></div>
-        <div><h3>Los datos confidenciales se quedan fuera</h3><p>Los datos personales y de salud nunca entran en una herramienta de IA pública. Te enseño qué anonimizar, qué dejar fuera y cómo comprobar cada resultado contra su fuente.</p></div>
+        <div><h3>La IA redacta, tú decides</h3><p>La valoración del riesgo, las causas y las acciones siguen siendo del profesional.</p></div>
+        <div><h3>Tú pones el contexto</h3><p>Tus procedimientos, tus centros y tu normativa. Con buen contexto, mejores resultados.</p></div>
+        <div><h3>Los datos confidenciales se quedan fuera</h3><p>Nada de datos personales ni de salud en herramientas públicas de IA.</p></div>
       </div>
     </div>
   </section>
@@ -269,7 +269,7 @@
     <div class="wrap guide-grid">
       <div>
         <h2>10 tareas de HSE que puedes delegar a la IA esta semana</h2>
-        <p class="g-sub">Y las decisiones que debes seguir tomando tú. Una guía corta, práctica y gratis.</p>
+        <p class="g-sub">Y las decisiones que debes seguir tomando tú. Una guía corta y gratis.</p>
         <h3>Qué incluye</h3>
         <ul class="ticks"><li>Prompts listos para charlas de seguridad, informes de inspección y reportes de incidentes</li><li>Cómo darle tu contexto a la IA sin compartir datos confidenciales</li><li>Una lista para revisar lo que produce la IA antes de que entre en un informe</li></ul>
       </div>
@@ -293,7 +293,7 @@
       </div>
       <div class="c-ask">
         <h3>¿Qué te gustaría aprender?</h3>
-        <p>Cuéntame qué tareas te quitan más tiempo o qué te gustaría resolver con IA. Lo que me escribas me ayuda a darle forma al curso.</p>
+        <p>Cuéntame qué tareas te quitan más tiempo. Me ayuda a darle forma al curso.</p>
         <a class="btn btn-primary" href="mailto:lorenamendezg@hotmail.com?subject=Ideas%20para%20el%20curso%20de%20IA%20para%20HSE">Escríbeme tus ideas</a>
         <p class="c-note">¿Quieres que te avise cuando abra? <a href="#guide">Inscríbete en la guía gratis.</a></p>
       </div>
@@ -302,39 +302,27 @@
 
   <section id="services" class="tint">
     <div class="wrap">
-      <div class="sec-head"><h2>Servicios</h2><p>Para equipos que quieren resultados ya. Proyectos con alcance cerrado, en remoto, para empresas de España y Latinoamérica. Los prompts, dashboards, el código y la documentación quedan en tus manos.</p></div>
+      <div class="sec-head"><h2>Servicios</h2><p>Para equipos de HSE, en remoto, en España y Latinoamérica.</p></div>
       <div class="services"><article class="svc">
-          <div><h3>Flujos de trabajo con IA para equipos HSE</h3><p class="who"><b>Para ti si</b>tu equipo pasa más tiempo escribiendo informes que en campo.</p></div>
-          <div><p>Reviso tus tareas repetitivas de HSE, decidimos juntos cuáles puede redactar la IA y preparo los prompts, plantillas y pasos de revisión. Cada decisión sigue en manos de tu equipo.</p><ul><li>Revisión de tareas: qué delegar a la IA y qué no</li><li>Biblioteca de prompts y plantillas basada en tus procedimientos</li><li>Taller online para tu equipo</li></ul></div>
+          <h3>IA para tu equipo HSE</h3><p>Elegimos juntos qué tareas puede redactar la IA. Preparo los prompts, plantillas y pasos de revisión, y un taller online para tu equipo.</p>
           <ul class="tools" aria-label="Herramientas"><li>ChatGPT</li><li>Microsoft Copilot</li><li>Gemini</li><li>Claude</li></ul>
         </article><article class="svc">
-          <div><h3>Dashboards de HSE y KPI</h3><p class="who"><b>Para ti si</b>tus cifras de seguridad u operaciones viven en cinco hojas de cálculo y reportarlas lleva días.</p></div>
-          <div><p>Conecto las fuentes que ya tienes y construyo un solo dashboard que se actualiza solo, desde incidentes e inspecciones hasta ventas, inventario y KPI de sostenibilidad.</p><ul><li>Definición de KPI con quienes usan los números</li><li>Seguimiento de incidentes, inspecciones y acciones correctivas</li><li>Matrices de requisitos legales (ISO 14001, SG-SST)</li></ul></div>
-          <ul class="tools" aria-label="Herramientas"><li>Power BI</li><li>Looker Studio</li><li>Power Query / DAX</li><li>Excel</li><li>SQL</li></ul>
-        </article><article class="svc">
-          <div><h3>Automatización y calidad de datos</h3><p class="who"><b>Para ti si</b>nadie confía en los datos o el mismo reporte se copia y pega cada semana.</p></div>
-          <div><p>Encuentro dónde fallan los datos, lo corrijo en el origen y automatizo los pasos repetitivos.</p><ul><li>Controles de datos maestros entre el ERP y los sistemas internos</li><li>Reportes automáticos (de Sheets a Docs, Power Query)</li><li>Pequeñas apps internas para formularios y aprobaciones</li></ul></div>
-          <ul class="tools" aria-label="Herramientas"><li>Apps Script</li><li>Power Apps</li><li>SharePoint</li><li>SAP Business ByDesign</li><li>Python</li></ul>
+          <h3>Dashboards y reportes automáticos</h3><p>Un solo dashboard de HSE que se actualiza solo, y reportes que ya no se copian y pegan cada mes.</p>
+          <ul class="tools" aria-label="Herramientas"><li>Power BI</li><li>Looker Studio</li><li>Excel / Power Query</li><li>Apps Script</li><li>Power Apps</li></ul>
         </article></div>
-    </div>
-  </section>
-
-  <section aria-labelledby="howTitle">
-    <div class="wrap">
-      <div class="sec-head"><h2 id="howTitle">Cómo funciona un proyecto</h2><p>Iteraciones cortas: ves resultados que funcionan desde las primeras semanas, no al final.</p></div>
-      <ol class="steps"><li><h3>Llamada gratis</h3><p>30 minutos sobre las tareas que quieres quitarte de encima y con qué cuentas hoy.</p></li><li><h3>Propuesta cerrada</h3><p>Alcance, entregables, plazos y precio por escrito antes de empezar.</p></li><li><h3>Construcción y revisión</h3><p>Una primera versión pronto y luego revisiones semanales con quienes la van a usar.</p></li><li><h3>Entrega</h3><p>Documentación y una sesión de formación para que tu equipo pueda usarlo y modificarlo.</p></li></ol>
+      <p class="svc-cta"><a class="btn btn-primary" href="#contact">Agenda una llamada gratis de 30 minutos</a></p>
     </div>
   </section>
 
   <section id="work" class="tint">
     <div class="wrap">
-      <div class="sec-head"><h2>Proyectos destacados</h2><p>Los datos de clientes y empleadores son confidenciales, así que aquí cuento el problema y el resultado en lugar de mostrar los dashboards.</p></div>
+      <div class="sec-head"><h2>Proyectos destacados</h2><p>Resultados, sin mostrar datos confidenciales.</p></div>
       <div class="work">
         <article class="case lead">
-          <div><p class="ctx">Mi propio producto</p><h3>albasst.com, un asistente de IA sobre normativa de SST</h3><p>Responde preguntas sobre la normativa colombiana de seguridad y salud en el trabajo. Lo construí para mostrar lo que la IA puede hacer por los profesionales de HSE cuando se configura con cuidado.</p><p><a class="more" href="https://albasst.com">Visitar albasst.com</a></p></div>
-          <ul class="facts"><li>Cada respuesta cita la norma, el artículo y el enlace</li><li>Avisa cuando una pregunta está fuera de sus fuentes</li><li>Diseñado, construido y gestionado por mí</li></ul>
+          <div><p class="ctx">Mi propio producto</p><h3>albasst.com, un asistente de IA sobre normativa de SST</h3><p>Responde preguntas sobre la normativa colombiana de SST. Lo construí para mostrar lo que la IA puede hacer por los profesionales de HSE cuando se configura con cuidado.</p><p><a class="more" href="https://albasst.com">Visitar albasst.com</a></p></div>
+          <ul class="facts"><li>Cita la norma, el artículo y el enlace en cada respuesta</li><li>Avisa cuando algo está fuera de sus fuentes</li><li>Diseñado y construido por mí</li></ul>
         </article>
-        <article class="case"><p class="ctx">Inteligencia de negocio, movilidad sostenible</p><h3>Análisis de desplazamientos para planes de movilidad al trabajo</h3><p>El análisis detrás de los planes de movilidad sostenible de empresas en toda España: desde dónde se desplaza la plantilla, qué transporte e infraestructura ciclista hay cerca de cada centro y el CO₂ de los desplazamientos por zona, con el informe generado automáticamente.</p><p class="result">Solo datos a nivel de código postal y mapas aptos para personas con daltonismo.</p></article><article class="case"><p class="ctx">Comercio para retail, Grupo Carrefour</p><h3>Dashboards de inventario y ventas</h3><p>Convertí las necesidades de los equipos de codificación, finanzas y cadena de suministro en reportes que se actualizan solos, y depuré los datos maestros entre SAP Business ByDesign y los sistemas internos del grupo.</p><p class="result">Hice visibles los artículos de baja rotación para que el equipo pudiera actuar sobre el stock.</p></article><article class="case"><p class="ctx">Terminales de combustible, Chevron</p><h3>Reportes de desempeño y seguridad de terminales</h3><p>Reportes en Power BI para terminales que suministraban 20 millones de galones de combustible al mes, y una app de reporte en Power Apps usada por todos los empleados en Colombia.</p><p class="result">Reduje un 50 % el tiempo de formación de conductores con formación en línea y un nuevo briefing operativo.</p></article><article class="case"><p class="ctx">Generación eléctrica, Mechero Energy</p><h3>Sistema de gestión HSE para una central de 60 MW</h3><p>Diseñé y gestioné el sistema HSE bajo las Normas de Desempeño de la IFC (Banco Mundial) para la central, las subestaciones, el gasoducto y una línea de 115 kV, durante la construcción, la puesta en marcha y el arranque.</p><p class="result">Cero incidentes y cero problemas ambientales en todas las fases.</p></article>
+        <div class="minis"><article class="case"><p class="ctx">Terminales de combustible, Chevron</p><h3>Operación de terminales de combustible</h3><p class="result">Reduje un 50 % el tiempo de formación de conductores.</p></article><article class="case"><p class="ctx">Generación eléctrica, Mechero Energy</p><h3>Sistema HSE para una central de 60 MW</h3><p class="result">Cero incidentes y cero problemas ambientales, de la construcción al arranque.</p></article><article class="case"><p class="ctx">Inteligencia de negocio, España</p><h3>Análisis para planes de movilidad sostenible</h3><p class="result">Mapas de plantilla y CO₂ por centro, con el informe generado automáticamente.</p></article></div>
       </div>
     </div>
   </section>
@@ -344,8 +332,7 @@
       <img src="images/loreavatar.jpeg" alt="Foto de Lorena Méndez" width="220" height="220" loading="lazy">
       <div>
         <h2>Sobre mí</h2>
-        <p>Trabajé más de diez años en seguridad, salud y ambiente: asesorando a empresas cliente, construyendo el sistema HSE de una central eléctrica y coordinando operaciones de terminales de combustible. Al preparar reportes para gerentes y autoridades vi cuánto mejoran las decisiones cuando los datos son claros, y en 2022 me pasé a los datos y la inteligencia de negocio.</p><p>Construir albasst.com me mostró cuánto tiempo puede ahorrar la IA a los profesionales de HSE cuando se usa con cuidado, y cuánto se equivoca cuando no. Eso es lo que enseño hoy.</p><p>Fuera del trabajo viajo, bailo y soy una de las voces de <a href="https://open.spotify.com/show/5GUdJfToEyDSVvpeJNblSj">Lo que callamos los expats</a>, un podcast sobre historias de migración.</p>
-        <p>Proyectos públicos: <a href="https://public.tableau.com/app/profile/lorena.mendez">Tableau Public</a>, <a href="https://github.com/lorenamendezg/projects">GitHub</a>, <a href="https://www.kaggle.com/lorenamendez">Kaggle</a>.</p>
+        <p>Trabajé más de diez años en seguridad, salud y ambiente, en energía, generación eléctrica y seguros, y en 2022 me pasé a los datos. Construir albasst.com me mostró cuánto tiempo ahorra la IA cuando se usa con cuidado. Eso es lo que enseño hoy.</p><p>Fuera del trabajo viajo, bailo y soy una de las voces del podcast <a href="https://open.spotify.com/show/5GUdJfToEyDSVvpeJNblSj">Lo que callamos los expats</a>.</p>
       </div>
     </div>
   </section>
@@ -353,7 +340,7 @@
   <section id="contact" class="contact">
     <div class="wrap">
       <h2>Cuéntame qué parte de tu trabajo te gustaría quitarte de encima.</h2>
-      <p>Describe la tarea, las herramientas que usas y qué información es confidencial. Te respondo con algunas preguntas o una propuesta de horario para una llamada.</p>
+      <p>Describe la tarea y las herramientas que usas. Te respondo con algunas preguntas o una propuesta de llamada.</p>
       <a class="mail" href="mailto:lorenamendezg@hotmail.com?subject=Consulta%20de%20proyecto">lorenamendezg@hotmail.com</a>
       <div class="links">
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/lorena-mendez-g/">LinkedIn</a>
