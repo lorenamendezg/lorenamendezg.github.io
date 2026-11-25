@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lorena Méndez – IA para profesionales de HSE, SST y PRL</title>
-<meta name="description" content="Usa la IA para el trabajo repetitivo de HSE, SST y PRL y conserva tú las decisiones. Guía gratis, curso y consultoría para España, Colombia y Latinoamérica, de Lorena Méndez, ingeniera ambiental y especialista en BI.">
+<meta name="description" content="Usa la IA para el trabajo repetitivo de HSE, SST y PRL y conserva tú las decisiones. Guía gratis y consultoría para España, Colombia y Latinoamérica, de Lorena Méndez, ingeniera ambiental y especialista en BI.">
 <meta property="og:title" content="Lorena Méndez – IA para profesionales de HSE, SST y PRL">
-<meta property="og:description" content="Usa la IA para el trabajo repetitivo de HSE, SST y PRL y conserva tú las decisiones. Guía gratis, curso y consultoría para España, Colombia y Latinoamérica, de Lorena Méndez, ingeniera ambiental y especialista en BI.">
+<meta property="og:description" content="Usa la IA para el trabajo repetitivo de HSE, SST y PRL y conserva tú las decisiones. Guía gratis y consultoría para España, Colombia y Latinoamérica, de Lorena Méndez, ingeniera ambiental y especialista en BI.">
 <meta property="og:image" content="https://lorenamendezg.github.io/images/loreavatar.jpeg">
 <meta property="og:locale" content="es_ES">
 <link rel="icon" href="images/loreavatar.jpeg">
@@ -126,21 +126,6 @@
   .f-status:empty { display: none; }
   @media (max-width: 860px) { .guide-grid { grid-template-columns: 1fr; } }
 
-  /* Course */
-  .course { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 72px; align-items: center; }
-  .status { display: inline-block; margin: 0 0 16px; padding: 4px 12px; border-radius: 999px; background: var(--hivis); font-weight: 600; font-size: .9rem; }
-  .course h2 { margin-bottom: 16px; }
-  .c-intro { margin: 0 0 28px; max-width: 52ch; }
-  .c-note { margin: 12px 0 0; color: var(--spruce-2); font-size: .95rem; max-width: 46ch; }
-  .c-ask { background: var(--paper-2); border-radius: 16px; padding: clamp(20px, 3vw, 32px); }
-  .c-ask h3 { font-size: 1.3rem; }
-  .c-ask p { margin: 0 0 20px; max-width: 48ch; }
-  .c-ask .c-note { margin: 16px 0 0; }
-  .modules { list-style: none; margin: 0; padding: 0; counter-reset: m; border-top: 2px solid var(--spruce); }
-  .modules li { counter-increment: m; display: grid; grid-template-columns: 40px 1fr; gap: 8px; padding-block: 14px; border-bottom: 1px solid var(--line); }
-  .modules li::before { content: counter(m); font-weight: 700; color: var(--moss); font-variant-numeric: tabular-nums; }
-  @media (max-width: 860px) { .course { grid-template-columns: 1fr; } }
-
   /* Services */
   .services { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; border-top: 2px solid var(--spruce); }
   .svc { padding-block: 28px; }
@@ -222,7 +207,6 @@
   <a class="brand" href="#">Lorena Méndez <span>IA y BI para HSE</span></a>
   <nav class="nav" aria-label="Principal">
     <a href="#guide">Guía gratis</a>
-    <a href="#course">Curso</a>
     <a href="#services">Servicios</a>
     <a href="#work">Proyectos</a>
     <a class="btn btn-ghost" href="#contact">Contacto</a>
@@ -276,27 +260,11 @@
       <form class="signup" id="signup" novalidate>
         <label for="em">Tu correo</label>
         <input id="em" name="email" type="email" autocomplete="email" required>
-        <label class="consent"><input type="checkbox" name="consent" required> <span>Autorizo el tratamiento de mi correo para recibir la guía gratis y correos ocasionales sobre el curso, según la <a href="privacidad.html">política de tratamiento de datos personales</a>. Puedo darme de baja cuando quiera.</span></label>
+        <label class="consent"><input type="checkbox" name="consent" required> <span>Autorizo el tratamiento de mi correo para recibir la guía gratis y correos ocasionales con contenido sobre IA aplicada a HSE, según la <a href="datenschutz.html">política de tratamiento de datos personales</a>. Puedo darme de baja cuando quiera.</span></label>
         <button class="btn btn-primary" type="submit">Envíame la guía</button>
-        <p class="f-note">Un correo con la guía y después solo novedades del curso. Sin spam.</p>
+        <p class="f-note">Un correo con la guía y después, de vez en cuando, contenido útil sobre IA para HSE. Sin spam.</p>
         <p class="f-status" role="status" aria-live="polite"></p>
       </form>
-    </div>
-  </section>
-
-  <section id="course">
-    <div class="wrap course">
-      <div>
-        <p class="status">En construcción</p>
-        <h2>Curso: IA para la gestión HSE</h2>
-        <p class="c-intro">Estoy construyendo un curso práctico, en español, para profesionales de HSE, SST y PRL que quieren usar la IA en su día a día sin perder el criterio.</p>
-      </div>
-      <div class="c-ask">
-        <h3>¿Qué te gustaría aprender?</h3>
-        <p>Cuéntame qué tareas te quitan más tiempo. Me ayuda a darle forma al curso.</p>
-        <a class="btn btn-primary" href="mailto:lorenamendezg@hotmail.com?subject=Ideas%20para%20el%20curso%20de%20IA%20para%20HSE">Escríbeme tus ideas</a>
-        <p class="c-note">¿Quieres que te avise cuando abra? <a href="#guide">Inscríbete en la guía gratis.</a></p>
-      </div>
     </div>
   </section>
 
@@ -353,7 +321,7 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Lorena Méndez</span>
-    <nav aria-label="Legal"><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a></nav>
+    <nav aria-label="Legal"><a href="aviso-legal.html">Aviso legal</a><a href="datenschutz.html">Privacidad</a></nav>
   </div>
 </footer>
 
